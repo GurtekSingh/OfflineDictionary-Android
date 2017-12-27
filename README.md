@@ -1,4 +1,4 @@
-**OFFLINE DICTIONARY**
+#OFFLINE DICTIONARY
 
 *What is Offline Dictionary*
    
@@ -24,13 +24,14 @@
  
  _loading from assets _  
 
- add dictionary.db to **assets/databases** folder
+ > add dictionary.db to **assets/databases** folder
  
- 
+        ```java
         englishDictionary = Dictionary.getEnglishDictionary();
         englishDictionary.importDbFileFromAssets().subscribe();
-        
-  adding from sdcard  get parentpath database name will be inserted at end by
+     
+        ```
+  adding from sdcard  get parent path database name will be inserted at end by
   default
          
          
