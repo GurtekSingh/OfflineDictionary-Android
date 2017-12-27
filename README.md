@@ -53,7 +53,7 @@
   never forget to add subscribe to it.
   
  _Search a word_
- 
+  
     List<Word> words = englishDictionary.searchWord(box.getText().toString());
 
   it return all the possible meaning for that word it's 
@@ -64,35 +64,37 @@
   
   Add this line in your project.gradle file 
   
-
+   ```groovy
     buildscript {
       ext{
           supportDependencies = [
                   roomrx : "android.arch.persistence.room:rxjava2:1.0.0"
           ]
       }
-    .....
     }
+  ```
     
   **Dependency for gradle**
   
  Step 1. Add it in your root build.gradle at the end of repositories:
   
+   ```groovy
   	allprojects {
   		repositories {
-  			...
+  			
   			maven { url 'https://jitpack.io' }
   		}
   	}
-  	
+  ```
   	
 
 Step 2. Add the dependency
-
+   
+   ```groovy
 	dependencies {
 	        compile 'com.github.GurtekSingh:OfflineDictionary-Android:0.1.0'
 	}
-
+   ```
     
     
     
