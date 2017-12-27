@@ -91,7 +91,7 @@ Step 2. Add the dependency
    
    ```groovy
 	dependencies {
-	        compile 'com.github.GurtekSingh:OfflineDictionary-Android:0.1.0'
+	        compile 'com.github.GurtekSingh:OfflineDictionary-Android:0.1.1'
 	}
    ```
     
