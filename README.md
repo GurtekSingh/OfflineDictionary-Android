@@ -12,13 +12,15 @@
   
   on Application on Create init Dictionary
 
- 
+ ```java
+ class MyApp{
      @Override
      public void onCreate() {
          super.onCreate();
          Dictionary.init(this);
       }
- 
+     }
+  ```
  
  pre populated database with inital db
  
@@ -26,11 +28,10 @@
 
  > add dictionary.db to **assets/databases** folder
  
-        ```java
+ 
         englishDictionary = Dictionary.getEnglishDictionary();
         englishDictionary.importDbFileFromAssets().subscribe();
-     
-        ```
+ 
   adding from sdcard  get parent path database name will be inserted at end by
   default
          
@@ -72,3 +73,26 @@
       }
     .....
     }
+    
+  **Dependency for gradle**
+  
+ Step 1. Add it in your root build.gradle at the end of repositories:
+  
+  	allprojects {
+  		repositories {
+  			...
+  			maven { url 'https://jitpack.io' }
+  		}
+  	}
+  	
+  	
+
+Step 2. Add the dependency
+
+	dependencies {
+	        compile 'com.github.GurtekSingh:OfflineDictionary-Android:0.1.0'
+	}
+
+    
+    
+    
